@@ -1,0 +1,74 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "eslint.rules.customizations": [
+    {
+      "rule": "*",
+      "severity": "warn"
+    }
+  ],
+  "eslint.workingDirectories": [
+    {
+      "pattern": "apps/*/"
+    },
+    {
+      "pattern": "packages/*/"
+    },
+    {
+      "pattern": "tooling/*/"
+    }
+  ],
+  "tailwindCSS.experimental.configFile": "./tooling/tailwind/index.ts",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "deno.enable": true,
+  "deno.enablePaths": [
+    "./supabase/functions"
+  ],
+  "deno.importMap": "./supabase/functions/import_map.json",
+  "deno.lint": true,
+  "deno.unstable": true,
+  "[dotenv]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "cSpell.words": [
+    "apikey",
+    "autofix",
+    "clsx",
+    "cmdk",
+    "fkey",
+    "flowtype",
+    "generouted",
+    "hookform",
+    "ianvs",
+    "lucide",
+    "manypkg",
+    "messageformat",
+    "nextjs",
+    "plusplus",
+    "pnpx",
+    "Postgrest",
+    "predeploy",
+    "prettiercache",
+    "shadcn",
+    "signup",
+    "supabase",
+    "superjson",
+    "svgr",
+    "tailwindcss",
+    "tanstack",
+    "tsbuildinfo",
+    "tsup",
+    "typecheck",
+    "upsert"
+  ],
+  "[sql]": {
+    "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+  },
+  "[postgres]": {
+    "editor.defaultFormatter": "bradymholt.pgformatter"
+  }
+}

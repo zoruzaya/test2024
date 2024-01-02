@@ -1,0 +1,70 @@
+{
+  "name": "@spec-team/eslint-config",
+  "version": "0.2.0",
+  "main": "index.js",
+  "private": true,
+  "license": "MIT",
+  "files": [
+    "./base.js",
+    "./nextjs.js",
+    "./react.js"
+  ],
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "format": "prettier --check \"**/*.{mjs,ts,md,json}\""
+  },
+  "dependencies": {
+    "@next/eslint-plugin-next": "14.0.4",
+    "@types/eslint": "8.56.0",
+    "@typescript-eslint/eslint-plugin": "6.16.0",
+    "@typescript-eslint/eslint-plugin-tslint": "6.16.0",
+    "@typescript-eslint/parser": "6.16.0",
+    "babel-eslint": "10.1.0",
+    "eslint": "8.56.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-airbnb-typescript": "17.1.0",
+    "eslint-config-next": "14.0.4",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-config-react-app": "7.0.1",
+    "eslint-config-turbo": "1.11.2",
+    "eslint-import-resolver-typescript": "3.6.1",
+    "eslint-plugin-boundaries": "4.0.1",
+    "eslint-plugin-flowtype": "8.0.3",
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-jest": "27.6.0",
+    "eslint-plugin-jest-dom": "5.1.0",
+    "eslint-plugin-jsx-a11y": "6.8.0",
+    "eslint-plugin-react": "7.33.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-simple-import-sort": "10.0.0",
+    "eslint-plugin-testing-library": "6.2.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tslint": "6.1.3"
+  },
+  "devDependencies": {
+    "@spec-team/prettier-config": "0.1.0",
+    "@spec-team/tsconfig": "0.1.0",
+    "@types/node": "20.10.5",
+    "@types/react": "18.2.45",
+    "@types/react-dom": "18.2.18",
+    "eslint-plugin-sort-keys-fix": "1.1.2",
+    "typescript": "5.3.3"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "./base.js"
+    ]
+  },
+  "prettier": "@spec-team/prettier-config",
+  "publishConfig": {
+    "access": "public"
+  },
+  "pnpm": {
+    "overrides": {
+      "prettier": "3.0.2"
+    }
+  }
+}

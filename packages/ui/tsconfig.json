@@ -1,0 +1,12 @@
+{
+  "extends": "@spec-team/tsconfig/base.json",
+  "include": [".", "types/*.d.ts"],
+  "exclude": ["dist", "build", "node_modules"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  }
+}

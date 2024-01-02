@@ -1,0 +1,3 @@
+{
+  "extends": ["@spec-team/eslint-config/base", "plugin:storybook/recommended"]
+}
